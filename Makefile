@@ -50,9 +50,9 @@ gh-pages: build
 	rm -rf "$$WORK"/* ; \
 	rsync -av book/ "$$WORK"/ ; \
 	if [ -f CNAME ] ; then cp CNAME "$$WORK"/ ; fi ; \
-	cd "$$WORK" ; \
+	pushd "$$WORK" ; \
 	git add -A ; \
 	git commit -m "Updated gh-pages $$VER" ; \
-	cd - ; \
+	pop ; \
 	git worktree remove "$$WORK" ; \
 	git push origin gh-pages
