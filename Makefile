@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 all: build
 
 build:
@@ -15,7 +17,7 @@ serve:
 #   push: rsync
 #   push: gh-pages
 
-push:
+push: gh-pages
 
 ########################################
 # IF you're going to publish the generated book to a web server, and you're
@@ -48,9 +50,9 @@ gh-pages: build
 	rm -rf "$$WORK"/* ; \
 	rsync -av book/ "$$WORK"/ ; \
 	if [ -f CNAME ] ; then cp CNAME "$$WORK"/ ; fi ; \
-	pushd "$$WORK" ; \
+	cd "$$WORK" ; \
 	git add -A ; \
 	git commit -m "Updated gh-pages $$VER" ; \
-	popd ; \
+	cd - ; \
 	git worktree remove "$$WORK" ; \
 	git push origin gh-pages

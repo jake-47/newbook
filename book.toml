@@ -7,7 +7,7 @@ authors             = ["John Simpson"]
 language            = "en"
 multilingual        = false
 src                 = "src"
-title               = "Template"
+title               = ""
 
 [output.html]
 additional-css      = [ "section-lines.css" , "version-commit.css" ]
