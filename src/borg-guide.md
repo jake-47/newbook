@@ -14,7 +14,7 @@ This section is all you will need on a regular basis to create backups. It's onl
 	```
 	borg create --stats --progress /Volumes/spb/sborgbackup::{now} ~/Documents/S
 	```
-3. Enter your backup password, and hit *Enter*. Don't worry if you don't see anything in the terminal as you type the password. If you are on a new laptop, or making backups after a long time, the backup will take some time; but the second time around, it will be much faster. After the backup process is complete, you should see something like the image below.![borg-stats](/borg-stats.png)
+3. Enter your backup password, and hit *Enter*. Don't worry if you don't see anything in the terminal as you type the password. If you are on a new laptop, or making backups after a long time, the backup will take some time; but the second time around, it will be much faster. After the backup process is complete, you should see something like the image below.![borg-stats](./borg-stats.png)
 	> **Warning:** Lose your password, and your backups are gone forever. Ensure you write it down carefully and store safely.
 4. Insert your second pendrive, and run the command in step 2 after editing the part which says `spb` to `ssb` (s secondary backup) in the terminal. Your mouse won't work, so you will have to use the arrow keys to navigate to that part of the command.
 
