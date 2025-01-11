@@ -3,7 +3,7 @@
 # * template https://github.com/kg4zow/mdbook-template/
 
 [book]
-authors             = ["John Simpson"]
+authors             = ["Jake47"]
 language            = "en"
 multilingual        = false
 src                 = "src"
@@ -12,7 +12,7 @@ title               = ""
 [output.html]
 additional-css      = [ "section-lines.css" , "version-commit.css" ]
 curly-quotes        = false
-git-repository-url  = "https://github.com/kg4zow/mdbook-template"
+git-repository-url  = "https://github.com/jake-47/newbook"
 no-section-label    = true
 
 [preprocessor.version-commit]
