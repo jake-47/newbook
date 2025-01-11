@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Borg Simple Guide for MacOS</title>
+        <title>Borg Backup: simple guide for MacOS</title>
 
 
         <!-- Custom HTML head -->
@@ -98,18 +98,18 @@
 -->
 <!-- End extra link above the ToC -->
 
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="homepage.html">Homepage</a></li><li class="chapter-item expanded "><a href="borg-guide.html">Borg Simple Guide for MacOS</a></li><li class="chapter-item expanded "><a href="bitcoin-letter.html">Bitcoin Letter</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="homepage.html">Homepage</a></li><li class="chapter-item expanded "><a href="borg-guide.html">Borg Backup: simple guide for MacOS</a></li><li class="chapter-item expanded "><a href="bitcoin-letter.html">Bitcoin Letter</a></li></ol>
 
 <!-- Start version-commit content below ToC -->
                 <hr/>
                 <div class="part-title">Version</div>
                 <div id="commit" class='version-commit-div'>
-                    <span class='version-commit-hash'><tt>b3b5646</tt></span><br/>
-                    <span class='version-commit-time'><tt>2025-01-11 09:50:13 +0000</tt></span>
+                    <span class='version-commit-hash'><tt>8149527</tt></span><br/>
+                    <span class='version-commit-time'><tt>2025-01-11 17:30:38 +0000</tt></span>
                 </div>
                 <div class="part-title">Generated</div>
                 <div id="generated" class='version-commit-div'>
-                    <span class='version-commit-now'><tt>2025-01-11 09:50:39 +0000</tt></span>
+                    <span class='version-commit-now'><tt>2025-01-11 17:31:18 +0000</tt></span>
                 </div>
 <!-- End version-commit content below ToC -->
 
@@ -198,31 +198,25 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="borg-simple-guide-for-macos"><a class="header" href="#borg-simple-guide-for-macos">Borg simple guide for MacOS</a></h1>
+                        <h1 id="borg-backup-simple-guide-for-macos"><a class="header" href="#borg-backup-simple-guide-for-macos">Borg backup: simple guide for MacOS</a></h1>
 <hr />
-<p>This guide provides a simple, easy-to-follow directions for non-technical MacOS users to start using Borg Backup (considered by many to be the holy grail of backups) and avoid siftting through cluttered and confusing documentation.</p>
-<p>It's interesting that the amount of information lay people need to benefit from complex apps, is actually not much. Borg's documentation is extensive, and most likely written by devs for for non-technical-users.</p>
+<p>As one smart guy once said, "There are two kinds of people in the world: those who have lost data, and those who will." Don't wait till you feel the pain of losing crucial data. Make backups periodically, in at least two pendrives, once a day or once a week, and definitely before you have to change your laptop.</p>
+<blockquote>
+<p><strong>Warning:</strong> Lose your password, and your backups are gone forever. Write it down carefully, keep redudancies, and store safely.</p>
+</blockquote>
 <h2 id="create-backup"><a class="header" href="#create-backup">Create backup</a></h2>
 <p>This section is all you will need on a regular basis to create backups. It's only when you get yourself a new laptop will you need the other sections.</p>
-<blockquote>
-<p><strong>Note</strong>: Make backups periodically, in both pendrives, once a day or once a week, and definitely before you have to change your laptop.</p>
-</blockquote>
 <ol>
 <li>Open the terminal (Press <em>CMD</em> and <em>Spacebar</em>, and search for "terminal").</li>
 <li>Keep pressing the up arrow until you see the command below, and hit <em>Enter</em>. If you can't find the command, then copy the command below, and paste it in the terminal (press <em>CMD</em> and <em>V</em>).
 <pre><code>borg create --stats --progress /Volumes/spb/sborgbackup::{now} ~/Documents/S
 </code></pre>
 </li>
-<li>Enter your backup password, and hit <em>Enter</em>. Don't worry if you don't see anything in the terminal as you type the password. If you are on a new laptop, or making backups after a long time, the backup will take some time; but the second time around, it will be much faster. After the backup process is complete, you should see something like the image below.<img src="./borg-stats.png" alt="borg-stats" />
-<blockquote>
-<p><strong>Warning:</strong> Lose your password, and your backups are gone forever. Ensure you write it down carefully and store safely.</p>
-</blockquote>
-</li>
+<li>Enter your backup password, and hit <em>Enter</em>. Don't worry if you don't see anything in the terminal as you type the password. If you are on a new laptop, or making backups after a long time, the backup will take some time; but the second time around, it will be much faster. After the backup process is complete, you should see something like the image below.<img src="./borg-stats.png" alt="borg-stats" /></li>
 <li>Insert your second pendrive, and run the command in step 2 after editing the part which says <code>spb</code> to <code>ssb</code> (s secondary backup) in the terminal. Your mouse won't work, so you will have to use the arrow keys to navigate to that part of the command.</li>
 </ol>
 <h2 id="create-repo"><a class="header" href="#create-repo">Create repo</a></h2>
 <p>The repo was already created for you, in both pendrives, so you won't need this section unless you lose a pendrive. You only need to create the repo once in your new pendrive, and then continue making backups as described above. To create a new repo, follow the steps below:</p>
-<p><strong>Note</strong>: Always keep backups in at least two pendrives.</p>
 <ol>
 <li>In you new pendrive, create a folder <code>spb</code> or <code>ssb</code>, depending on which pendrive you are creating the folder.</li>
 <li>Run the command (after changing the folder name to the one you created in step 1):
@@ -273,11 +267,11 @@
                         <hr/>
                         <div class="version-commit-div" style="float: right">
                             Generated
-                            <span class='version-commit-now'><tt>2025-01-11 09:50:39 +0000</tt></span>
+                            <span class='version-commit-now'><tt>2025-01-11 17:31:18 +0000</tt></span>
                         </div>
                         <div class="version-commit-div">
-                            <span class='version-commit-hash'><tt>b3b5646</tt></span>
-                            <span class='version-commit-time'><tt>2025-01-11 09:50:13 +0000</tt></span>
+                            <span class='version-commit-hash'><tt>8149527</tt></span>
+                            <span class='version-commit-time'><tt>2025-01-11 17:30:38 +0000</tt></span>
                         </div>
 <!-- End version-commit content below every page -->
 
