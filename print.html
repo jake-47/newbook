@@ -3,7 +3,8 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduction - Template</title>
+        <title>Template</title>
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
@@ -219,6 +220,7 @@
 <h1 id="example-h1-section-header"><a class="header" href="#example-h1-section-header">Example H1 Section Header</a></h1>
 <h2 id="example-h2-section-header"><a class="header" href="#example-h2-section-header">Example H2 Section Header</a></h2>
 <h3 id="example-h3-section-header"><a class="header" href="#example-h3-section-header">Example H3 Section Header</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
 
 
 <!-- Start version-commit content below every page -->
@@ -238,9 +240,6 @@
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
-                            <a rel="next prefetch" href="chapter_1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -249,9 +248,6 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                    <a rel="next prefetch" href="chapter_1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
@@ -274,6 +270,11 @@
 
         <!-- Custom JS scripts -->
 
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
 
     </div>
     </body>
