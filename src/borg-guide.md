@@ -1,13 +1,10 @@
-# Borg simple guide for MacOS
+# Borg backup: simple guide for MacOS
 ---
-This guide provides a simple, easy-to-follow directions for non-technical MacOS users to start using Borg Backup (considered by many to be the holy grail of backups) and avoid siftting through cluttered and confusing documentation.
-
-It's interesting that the amount of information lay people need to benefit from complex apps, is actually not much. Borg's documentation is extensive, and most likely written by devs for for non-technical-users.
+As one smart guy once said, "There are two kinds of people in the world: those who have lost data, and those who will." Don't wait till you feel the pain of losing crucial data. Make backups periodically, in at least two pendrives, once a day or once a week, and definitely before you have to change your laptop.
+> **Warning:** Lose your password, and your backups are gone forever. Write it down carefully, keep redudancies, and store safely.
 
 ## Create backup
 This section is all you will need on a regular basis to create backups. It's only when you get yourself a new laptop will you need the other sections.
-
-> **Note**: Make backups periodically, in both pendrives, once a day or once a week, and definitely before you have to change your laptop.
 
 1. Open the terminal (Press *CMD* and *Spacebar*, and search for "terminal").
 2. Keep pressing the up arrow until you see the command below, and hit *Enter*. If you can't find the command, then copy the command below, and paste it in the terminal (press *CMD* and *V*).
@@ -15,13 +12,10 @@ This section is all you will need on a regular basis to create backups. It's onl
 	borg create --stats --progress /Volumes/spb/sborgbackup::{now} ~/Documents/S
 	```
 3. Enter your backup password, and hit *Enter*. Don't worry if you don't see anything in the terminal as you type the password. If you are on a new laptop, or making backups after a long time, the backup will take some time; but the second time around, it will be much faster. After the backup process is complete, you should see something like the image below.![borg-stats](./borg-stats.png)
-	> **Warning:** Lose your password, and your backups are gone forever. Ensure you write it down carefully and store safely.
 4. Insert your second pendrive, and run the command in step 2 after editing the part which says `spb` to `ssb` (s secondary backup) in the terminal. Your mouse won't work, so you will have to use the arrow keys to navigate to that part of the command.
 
 ## Create repo
 The repo was already created for you, in both pendrives, so you won't need this section unless you lose a pendrive. You only need to create the repo once in your new pendrive, and then continue making backups as described above. To create a new repo, follow the steps below:
-
-**Note**: Always keep backups in at least two pendrives.
 
 1. In you new pendrive, create a folder `spb` or `ssb`, depending on which pendrive you are creating the folder.
 2. Run the command (after changing the folder name to the one you created in step 1):

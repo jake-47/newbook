@@ -1,5 +1,5 @@
 
 [Homepage](./homepage.md)
-- [Borg Simple Guide for MacOS](./borg-guide.md)
+- [Borg Backup: simple guide for MacOS](./borg-guide.md)
 - [Bitcoin Letter](./bitcoin-letter.md)
 
