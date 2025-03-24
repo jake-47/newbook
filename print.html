@@ -99,18 +99,18 @@
 -->
 <!-- End extra link above the ToC -->
 
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="homepage.html">Homepage</a></li><li class="chapter-item expanded "><a href="borg-guide.html">Borg Backup: simple guide for MacOS</a></li><li class="chapter-item expanded "><a href="bitcoin-letter.html">Bitcoin Letter</a></li><li class="chapter-item expanded "><a href="salesforce.html">Salesforce Report</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="homepage.html">Homepage</a></li><li class="chapter-item expanded "><a href="borg-guide.html">Borg Backup: simple guide for MacOS</a></li><li class="chapter-item expanded "><a href="bitcoin-letter.html">Bitcoin Letter</a></li></ol>
 
 <!-- Start version-commit content below ToC -->
                 <hr/>
                 <div class="part-title">Version</div>
                 <div id="commit" class='version-commit-div'>
-                    <span class='version-commit-hash'><tt>78ed1b1</tt></span><br/>
-                    <span class='version-commit-time'><tt>2025-03-12 13:54:58 +0000</tt></span>
+                    <span class='version-commit-hash'><tt>18c6718</tt></span><br/>
+                    <span class='version-commit-time'><tt>2025-03-24 13:34:23 +0000</tt></span>
                 </div>
                 <div class="part-title">Generated</div>
                 <div id="generated" class='version-commit-div'>
-                    <span class='version-commit-now'><tt>2025-03-12 13:57:58 +0000</tt></span>
+                    <span class='version-commit-now'><tt>2025-03-24 13:34:54 +0000</tt></span>
                 </div>
 <!-- End version-commit content below ToC -->
 
@@ -207,9 +207,6 @@
 </li>
 <li>
 <p><a href="bitcoin-letter.html">Bitcoin letter</a>: This is a heartfelt letter to my family and friends urging them to protect their savings. I've posted it because it serves as sample of my long-form writing and hopefully helps someone along the way.</p>
-</li>
-<li>
-<p><a href="salesforce.html">Salesforce Basic Report</a>: This is a step-by-step guide to walk users through the process of creating a basic report in Salesforce. Images are low resolution as they pulled directly from <a href="https://www.youtube.com/watch?v=FprCnEnz07U">YouTube</a> (Salesforce didn't provide a free trial, and their support team didn't help). Dummy links are used in the <em>Next Steps</em> section. Table of Contents hasn't been added, as it requires minor tweaks to the mdbook code to display it as a right-panel, typical of modern user-guides.</p>
 </li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="borg-backup-simple-guide-for-macos"><a class="header" href="#borg-backup-simple-guide-for-macos">Borg backup: simple guide for MacOS</a></h1>
@@ -328,76 +325,17 @@ I wouldn't be telling you about it if it were not. But think of it this way. If 
 <p>Sincerely,<br />
 Jake
 19 Dec 2022</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="how-to-create-a-basic-report-in-salesforce"><a class="header" href="#how-to-create-a-basic-report-in-salesforce">How to Create a Basic Report in Salesforce</a></h1>
-<hr />
-<p>Salesforce provides a powerful reporting feature that allows users to create customised reports based on their data. Whether you're a beginner or have some experience with Salesforce, this step-by-step guide will walk you through the process of creating a basic report.</p>
-<blockquote>
-<h4 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h4>
-<ul>
-<li>A Salesforce account with appropriate permissions to create reports.</li>
-<li>Basic understanding of Salesforce objects (e.g., Accounts, Opportunities, Contacts, etc.).</li>
-</ul>
-</blockquote>
-<h2 id="step-1-create-a-new-report"><a class="header" href="#step-1-create-a-new-report">Step 1: Create a New Report</a></h2>
-<p>After logging in to Salesforce, click on the <strong>Reports</strong> tab in the top panel.</p>
-<p>In the Reports page, click on the button <strong>Create New Report</strong> located near the top right.</p>
-<p><img src="./20250312182723.png" alt="" /></p>
-<h2 id="step-2-choose-a-report-type"><a class="header" href="#step-2-choose-a-report-type">Step 2: Choose a Report Type</a></h2>
-<p>A dialog box will appear asking you to choose a report type. Salesforce offers different report types based on the objects you want to report on (e.g., Accounts, Opportunities, Contacts). These report types are pre-configured based on common business needs.</p>
-<p><img src="./20250312185204.png" alt="" /></p>
-<p>Make sure to choose the correct report type, as the records returned or the fields made available (e.g. Amount, Name, Close date, etc.) will depend on the report type selected. Once you've chosen the report type, click <strong>Continue</strong>.</p>
-<p>If you don't see a report type that fits your needs, ask your administrator to create one.</p>
-<h2 id="step-3-customise-the-report"><a class="header" href="#step-3-customise-the-report">Step 3: Customise the Report</a></h2>
-<p>With the report builder open, you can customise your report by adding filters, fields, and summaries.</p>
-<h3 id="1-add-or-remove-columns"><a class="header" href="#1-add-or-remove-columns">1. Add or Remove Columns</a></h3>
-<p>To add columns, type the name of the column in the <strong>Add column</strong> look up; and then select the field, by clicking on it. Remove a column by clicking the remove button (<strong>x</strong>) next to the column name.</p>
-<p><img src="./20250312185623.png" alt="" /></p>
-<p>To see all available fields, click on the <strong>Fields</strong> pane on the left.</p>
-<p><img src="./20250312153459.png" alt="" /></p>
-<h3 id="2-group-rows-or-columns-optional"><a class="header" href="#2-group-rows-or-columns-optional">2. Group Rows or Columns (Optional)</a></h3>
-<p>To group rows, enter the name of the row in the <strong>Add group</strong> lookup.</p>
-<p><img src="./20250312155613.png" alt="" /></p>
-<p>For example, if you have a row titled <strong>Opportunity Owner</strong>, then grouping by that row will display the opportunities by different owners; and the data will be arranged as a summary report.</p>
-<p><img src="./20250312155720.png" alt="" /></p>
-<p>Similarly, if you were to group columns, say by <strong>Account Name</strong>, you would get a matrix report.</p>
-<p><img src="./20250312155904.png" alt="" /></p>
-<p>To ungroup rows or columns, click the close button (<strong>x</strong>) next to the name of the row or column below the <strong>Add group</strong> lookup table.</p>
-<h3 id="3-perform-operations-optional"><a class="header" href="#3-perform-operations-optional">3. Perform Operations (Optional)</a></h3>
-<p>If you want to calculate sums, averages, or other summaries, click the dropdown arrow of the numeric field. Select <strong>Summarize</strong>, and then select a function, <strong>Sum</strong>, <strong>Average</strong>, <strong>Min</strong>, or <strong>Max</strong>.</p>
-<p><img src="./20250312160710.png" alt="" /></p>
-<h3 id="4-apply-filters-optional"><a class="header" href="#4-apply-filters-optional">4. Apply Filters (Optional)</a></h3>
-<p>Filters help narrow down the data in your report. To add a filter, click <strong>Filters</strong> on the left pane.</p>
-<p><img src="./20250312153748.png" alt="" /></p>
-<p>A few filters are applied to the report by default.
-To edit a filter, select it and make the required change.</p>
-<p><img src="./20250312160914.png" alt="" /></p>
-<p>To add a new filter, type the name of a field (e.g., Opportunity Stage, Account Type) in the <strong>Add Filter</strong> lookup. Then set the criteria. You can add multiple filters to further refine your report.</p>
-<h2 id="step-4-add-chart"><a class="header" href="#step-4-add-chart">Step 4: Add Chart</a></h2>
-<p>Add charts to visualise the report data. To add a chart, click the <strong>Add Chart</strong> button, located near the top panel.</p>
-<p><img src="./20250312162003.png" alt="" /></p>
-<p>Customise the chart by clicking the chart-settings icon (cog wheel).</p>
-<p><img src="./20250312162357.png" alt="" /></p>
-<h2 id="step-5-view-and-save-the-report"><a class="header" href="#step-5-view-and-save-the-report">Step 5: View and Save the Report</a></h2>
-<p>To view the report, click <strong>Save &amp; Run</strong>.</p>
-<p><img src="./20250312162834.png" alt="" /></p>
-<p>You will be prompted to give your report a name. Choose a name that clearly represents the data in the report (e.g., "Q1 Opportunity Report"). Choose a folder to save the report in, and click <strong>Save</strong>.</p>
-<h2 id="step-6-share-the-report"><a class="header" href="#step-6-share-the-report">Step 6: Share the Report</a></h2>
-<p>To share the report with other users or teams, click the Share button at the top right and choose the users or groups you want to share it with.</p>
-<blockquote>
-<h4 id="next-steps"><a class="header" href="#next-steps">Next Steps</a></h4>
-<p>Congratulations, you’ve created your first basic report in Salesforce! You can now explore other topics like <a href="">creating dashboards</a> to combine multiple reports into one interactive view, <a href="">managing report security and permissions</a> to control access to data, and diving into <a href="">advanced reporting features</a> like cross-object reports, custom formulas, and bucket fields for more powerful data analysis.</p>
-</blockquote>
 
 
 <!-- Start version-commit content below every page -->
                         <hr/>
                         <div class="version-commit-div" style="float: right">
                             Generated
-                            <span class='version-commit-now'><tt>2025-03-12 13:57:58 +0000</tt></span>
+                            <span class='version-commit-now'><tt>2025-03-24 13:34:54 +0000</tt></span>
                         </div>
                         <div class="version-commit-div">
-                            <span class='version-commit-hash'><tt>78ed1b1</tt></span>
-                            <span class='version-commit-time'><tt>2025-03-12 13:54:58 +0000</tt></span>
+                            <span class='version-commit-hash'><tt>18c6718</tt></span>
+                            <span class='version-commit-time'><tt>2025-03-24 13:34:23 +0000</tt></span>
                         </div>
 <!-- End version-commit content below every page -->
 
