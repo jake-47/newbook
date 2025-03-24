@@ -1,3 +1,7 @@
+
+
+3. [Salesforce Basic Report](salesforce.md): This is a step-by-step guide to walk users through the process of creating a basic report in Salesforce. Images are low resolution as they pulled directly from [YouTube](https://www.youtube.com/watch?v=FprCnEnz07U) (Salesforce didn't provide a free trial, and their support team didn't help). Dummy links are used in the *Next Steps* section. Table of Contents hasn't been added, as it requires minor tweaks to the mdbook code to display it as a right-panel, typical of modern user-guides.
+
 # How to Create a Basic Report in Salesforce
 ---
 Salesforce provides a powerful reporting feature that allows users to create customised reports based on their data. Whether you're a beginner or have some experience with Salesforce, this step-by-step guide will walk you through the process of creating a basic report.
